@@ -3,3 +3,5 @@ uvicorn
 pydantic
 ortools
 python-dotenv
+pydantic-settings
+pandas
