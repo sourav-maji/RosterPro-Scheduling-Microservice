@@ -6,6 +6,10 @@ import traceback
 
 router = APIRouter()
 
+@router.get("/")
+def get_health():
+    return {"message": "Micro Service is up and running..."}
+
 @router.post("/weekly")
 def generate_weekly_schedule(
     payload: SchedulerInput,
